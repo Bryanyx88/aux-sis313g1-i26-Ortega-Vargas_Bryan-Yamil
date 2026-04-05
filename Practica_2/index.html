@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - Git y HTML</title>
+</head>
+<body>
+    <table border="1" style="width:100%; border-collapse: collapse;">
+        <tr>
+            <td rowspan="4" style="width: 10%; text-align: center; vertical-align: middle; padding: 5px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Escudo_Universidad_Aut%C3%B3noma_Tom%C3%A1s_Fr%C3%ADas.png"  style="width: 80px; height: auto; display: block; margin: 0 auto;">
+            </td>
+            <td colspan="4" style="text-align: center; padding: 5px;">
+                <h3 style="margin: 0;">UNIVERSIDAD AUTÓNOMA “TOMÁS FRÍAS”</h3>
+                <h3 style="margin: 0;">INGENIERÍA DE SISTEMAS</h3>
+            </td>
+            <td rowspan="4" style="width: 10%; text-align: center; vertical-align: middle; padding: 5px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRga1eItXSLRPwaQZX-HQUTSNwRkK-TZuZMwA&s"  style="width: 80px; height: auto; display: block; margin: 0 auto;">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;">ESTUDIANTE:</td>
+            <td colspan="3" style="padding: 5px;">Bryan Yamil Ortega Vargas</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;">DOCENTE:</td>
+            <td style="padding: 5px;">Ing. Choque Matos Javier</td>
+            <td style="padding: 5px;">MATERIA:</td>
+            <td style="padding: 5px;">SIS-313 G1</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;">AUXILIAR:</td>
+            <td style="padding: 5px;">Univ. Alex Sander Lopez Orcko</td>
+            <td style="padding: 5px;">FECHA:</td>
+            <td style="padding: 5px;">29/03/2026</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="text-align: center; padding: 5px;">
+                <h3 style="margin: 0;">PRÁCTICA N2 - GIT, GITHUB Y HTML</h3>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <ol>
+        <li>¿Qué es una rama (branch) en Git y para qué sirve?<br>Respuesta: Es una línea independiente de desarrollo que representa una versión del código. Sirve para trabajar en nuevas funcionalidades, correcciones o experimentos sin modificar el código principal, permitiendo que varios desarrolladores trabajen simultáneamente en el mismo proyecto sin interferir entre sí.</li>
+        <li>¿Cómo se crea y se cambia entre ramas en Git?<br>Respuesta:
+            <ul>
+                <li>Crear: <code>git branch nombre_rama</code></li>
+                <li>Cambiar: <code>git checkout nombre_rama</code></li>
+            </ul>
+            También se puede hacer en un solo paso con <code>git checkout -b nombre_rama</code> (crea y cambia a la rama al mismo tiempo). En versiones más recientes, también se usa <code>git switch nombre_rama</code> para cambiar y <code>git switch -c nombre_rama</code> para crear y cambiar.
+        </li>
+        <li>¿Cuál es la diferencia entre la rama main y otras ramas?<br>Respuesta: La rama <code>main</code> (anteriormente llamada <code>master</code>) es la rama principal y oficial del proyecto, donde se encuentra el código estable y listo para producción. Las otras ramas son líneas secundarias creadas para desarrollar tareas específicas; una vez que el trabajo en ellas está terminado y verificado, se integran de nuevo a <code>main</code>.</li>
+        <li>¿Cómo se combinan ramas en Git (merge)?<br>Respuesta: Primero se debe cambiar a la rama que recibirá los cambios (generalmente <code>main</code>) con <code>git checkout main</code>. Luego se ejecuta <code>git merge nombre_rama_a_integrar</code>. Si no hay conflictos, Git realiza la fusión automáticamente; si hay conflictos, se deben editar los archivos afectados, resolver las discrepancias y luego confirmar los cambios con <code>git add</code> y <code>git commit</code>.</li>
+        <li>¿Qué problemas pueden ocurrir al trabajar con ramas (conflictos) y cómo se resuelven?<br>Respuesta: Los conflictos surgen cuando dos ramas diferentes modifican la misma línea de un archivo o cuando un archivo se modifica en una rama y se elimina en otra. Para resolverlos: Git marca los archivos con conflictos, se abren y se editan para decidir qué código mantener, luego se ejecuta <code>git add</code> para marcar como resuelto y <code>git commit</code> para finalizar la fusión. También se pueden usar herramientas de resolución de conflictos para facilitar el proceso.</li>
+    </ol>
+
+    <hr>
+
+    <h2>MI HORARIO</h2>
+    <p>Este es mi horario de la gestión 2026 semestre 3 XD</p>
+    <ul>
+        <li><a href="horario_materias.html">HORARIO DE MATERIAS</a></li>
+        <li><a href="horario_auxiliatura.html">HORARIO DE AUXILIATURA</a></li>
+    </ul>
+</body>
+</html>
